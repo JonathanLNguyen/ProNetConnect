@@ -212,13 +212,11 @@
 }
 
 .modal-content {
-   background-color: #fefefe;
-   padding: 20px;
-   border: 1px solid #888;
-   max-width: 400px; 
-   text-align: center;
-   position: relative;
-   width: 100%; 
+   background-color: #000000; /* background color of the form */
+   max-width: 450px;            /* maximum width */
+   margin: 0 auto;              /* margin & position*/
+   padding: 35px;               /* padding */
+   text-align: center;          /* text alignment */
 }
 
 .close {
@@ -231,11 +229,50 @@
    cursor: pointer;
 }
 
-.form {
-   background-color: #000000; /* background color of the form */
-   max-width: 450px;            /* maximum width */
-   margin: 0 auto;              /* margin & position*/
-   padding: 35px;               /* padding */
-   text-align: center;          /* text alignment */
+label {
+   display: block;                  /*display*/
+   margin: 0px;                     /*margin*/
+   color: #ffffff;                /*color*/
+   width: 100%;                     /*width*/
+   font-weight: bold;               /*font weight*/
+   text-align: center;              /*text alignment*/
+   font-family: Courier, monospace; /*font family*/
+}
 
+button[type="submit"]                /*input type button*/ {
+   font-family: Courier, monospace; /*font family*/
+   text-transform: uppercase;       /*text transform*/
+   background: #6b21a8;           /*background*/
+   width: 100%;                     /*width*/
+   padding: 15px;                   /*padding*/
+   color: #fff;                   /*color*/
+   font-size: 20px;                 /*font-size*/
+   cursor: pointer;                 /*cursor*/
+}
+
+button[type="button"]                /*input type button*/ {
+   font-family: Courier, monospace; /*font family*/
+   text-transform: uppercase;       /*text transform*/
+   background: #6b21a8;           /*background*/
+   width: 100%;                     /*width*/
+   padding: 15px;                   /*padding*/
+   color: #fff;                   /*color*/
+   font-size: 20px;                 /*font-size*/
+   cursor: pointer;                 /*cursor*/
+}
+
+input[type="email"],                 
+input[type="text"],                  
+input[type="password"],                
+input[type="repeatPassword"],                 
+input[type="firstName"],                 
+input[type="lastName"]              {
+    font-family: Courier, monospace; /*font family*/
+    background: #ffffff;           /*background*/
+    width: 100%;                     /*width*/
+    margin: 15px 0;                   /*margin*/
+    padding: 10px;                   /*padding*/
+    box-sizing: border-box;          /*box size*/
+    font-size: 16px;                 /*font-size*/
+    color: #fff;                   /*color*/
 }
