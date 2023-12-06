@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <title>Messages Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Application</title>
+    <link rel="stylesheet" href="style7.css">
     <link rel="stylesheet" href="Navigation Bar Style Sheet.css">
-    <link rel="stylesheet" href="Messages Page Style Sheet.css">
 </head>
 <body>
   <div class="navbar">
@@ -12,59 +13,32 @@
       <a href="Home Page.html"><img src="ProNetConnect Logo.png" alt="Company Logo"></a>
     </div>
     <div class="nav-links">
-        <a href="Home Page.html"><img src="Home.png" alt="Home">Home</a>
-        <a href="Jobs Page.html"><img src="jobs.png" alt="Jobs">Jobs</a>
-        <a href="Messages Page.html"><img src="Chat.png" alt="Messages">Messages</a>
-        <a href="News Page.html"><img src="news.png" alt="News">News</a>
-        <a href="Groups&Communities.html"><img src="groups.png" alt="Groups">Groups</a>
-        <a href="Profile Page.html"><img src="profile.png" alt="Profile">Profile</a>
+      <a href="Home Page.html"><img src="Home.png" alt="Home">Home</a>
+      <a href="Jobs Page.html"><img src="jobs.png" alt="Jobs">Jobs</a>
+      <a href="Messages Page.html"><img src="Chat.png" alt="Messages">Messages</a>
+      <a href="News Page.html"><img src="news.png" alt="News">News</a>
+      <a href="Groups&Communities.html"><img src="groups.png" alt="Groups">Groups</a>
+      <a href="Profile Page.html"><img src="profile.png" alt="Profile">Profile</a>
     </div>
   </div>
-  <!-- Rest of your content goes here -->  
-<div class="container">
-    <div class="sidebar">
-        <!-- Sidebar contacts -->
-        <div class="contact">
-            <img src="profile-placeholder.png" alt="Profile Picture">
-            Jon Snow
+    <div class="chat-container">
+        <div class="activity-bar">
+            <!-- Sample Contacts -->
+            <div class="contact" data-contact-id="1">Contact 1<div class="last-message-info"></div></div>
+            <div class="contact" data-contact-id="2">Contact 2<div class="last-message-info"></div></div>
+            <div class="contact" data-contact-id="3">Contact 3<div class="last-message-info"></div></div>
+            <div class="contact" data-contact-id="4">Contact 4<div class="last-message-info"></div></div>
         </div>
-        <div class="contact">
-            <img src="profile-placeholder.png" alt="Profile Picture">
-            Gandalf
-        </div>
-        <div class="contact">
-            <img src="profile-placeholder.png" alt="Profile Picture">
-            Luke Skywalker
-        </div>
-        <!-- More contacts -->
-    </div>
-    <div class="chat-area">
-        <!-- Chat Header -->
-        <div class="chat-header">
-        <img src="profile-placeholder.png" alt="Profile Picture">
-        Jon Snow</div>
-        <!-- Chat Messages -->
-        <div class="chat-messages">
-            <div class="message sent">
-                Hello, how are you?
-                <img src="profile-placeholder.png" alt="Profile Picture">
+
+        <div class="chat-area">
+            <div class="chat-header">Select a Contact</div>
+            <ul id="messages"></ul>
+            <div class="message-input">
+                <input id="textbox" type="text" placeholder="Type a message...">
+                <button id="button">Send</button>
             </div>
-            <div class="message received">
-                I'm fine, thanks! And you?
-                <img src="profile-placeholder.png" alt="Profile Picture">
-            </div>
-            <!-- More messages -->
-        </div>
-        <!-- Chat Input -->
-        <div class="chat-input">
-            <input type="text" placeholder="Type a message...">
-            <button>Send</button>
         </div>
     </div>
-</div>
-<div class="bottom-bar"></div>
+    <script src="script7.js"></script>
 </body>
 </html>
-
-
-
